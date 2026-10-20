@@ -1,0 +1,302 @@
+{
+  "Cisco-IOS-XE-native:native": {
+    "version": "17.3",
+    "boot-start-marker": [
+      null
+    ],
+    "boot-end-marker": [
+      null
+    ],
+    "memory": {
+      "free": {
+        "low-watermark": {
+          "processor": 71464
+        }
+      }
+    },
+    "call-home": {
+      "Cisco-IOS-XE-call-home:contact-email-addr": "sch-smart-licensing@cisco.com",
+      "Cisco-IOS-XE-call-home:tac-profile": {
+        "profile": {
+          "CiscoTAC-1": {
+            "active": true,
+            "destination": {
+              "transport-method": "http"
+            }
+          }
+        }
+      }
+    },
+    "service": {
+      "timestamps": {
+        "debug": {
+          "datetime": {
+            "msec": {}
+          }
+        },
+        "log": {
+          "datetime": {
+            "msec": [
+              null
+            ]
+          }
+        }
+      },
+      "call-home": [
+        null
+      ]
+    },
+    "platform": {
+      "Cisco-IOS-XE-platform:console": {
+        "output": "serial"
+      },
+      "Cisco-IOS-XE-platform:qfp": {
+        "utilization": {
+          "monitor": {
+            "load": 80
+          }
+        }
+      },
+      "Cisco-IOS-XE-platform:punt-keepalive": {
+        "disable-kernel-core": true
+      }
+    },
+    "hostname": "R1",
+    "enable": {
+      "secret": {
+        "type": "9",
+        "secret": "$9$OJ0gmKFc4yhaGU$XZ797OFTgHtqTMOSvDpa0xU6vdFc31l5ciIcMQl.Q5U"
+      }
+    },
+    "username": [
+      {
+        "name": "automation",
+        "privilege": 15,
+        "secret": {
+          "encryption": "9",
+          "secret": "$9$.P0OfPTj1ihwuE$VWAWcD2mD2OXXXE2EouXRMKymrH4q9Zyp8R1C1.GmNQ"
+        }
+      }
+    ],
+    "ip": {
+      "forward-protocol": {
+        "protocol": "nd"
+      },
+      "ssh": {
+        "version": 2
+      },
+      "Cisco-IOS-XE-http:http": {
+        "authentication": {
+          "local": [
+            null
+          ]
+        },
+        "server": false,
+        "secure-server": true
+      }
+    },
+    "interface": {
+      "GigabitEthernet": [
+        {
+          "name": "1",
+          "description": "MANAGEMENT",
+          "ip": {
+            "address": {
+              "primary": {
+                "address": "192.168.1.31",
+                "mask": "255.255.255.0"
+              }
+            }
+          },
+          "mop": {
+            "enabled": false,
+            "sysid": false
+          },
+          "Cisco-IOS-XE-ethernet:negotiation": {
+            "auto": true
+          }
+        },
+        {
+          "name": "2",
+          "shutdown": [
+            null
+          ],
+          "mop": {
+            "enabled": false,
+            "sysid": false
+          },
+          "Cisco-IOS-XE-ethernet:negotiation": {
+            "auto": true
+          }
+        },
+        {
+          "name": "3",
+          "shutdown": [
+            null
+          ],
+          "mop": {
+            "enabled": false,
+            "sysid": false
+          },
+          "Cisco-IOS-XE-ethernet:negotiation": {
+            "auto": true
+          }
+        },
+        {
+          "name": "4",
+          "shutdown": [
+            null
+          ],
+          "mop": {
+            "enabled": false,
+            "sysid": false
+          },
+          "Cisco-IOS-XE-ethernet:negotiation": {
+            "auto": true
+          }
+        }
+      ]
+    },
+    "control-plane": {},
+    "login": {
+      "on-success": {
+        "log": {}
+      }
+    },
+    "multilink": {
+      "Cisco-IOS-XE-ppp:bundle-name": "authenticated"
+    },
+    "redundancy": {},
+    "spanning-tree": {
+      "Cisco-IOS-XE-spanning-tree:extend": {
+        "system-id": [
+          null
+        ]
+      }
+    },
+    "subscriber": {
+      "templating": [
+        null
+      ]
+    },
+    "crypto": {
+      "Cisco-IOS-XE-crypto:pki": {
+        "certificate": {
+          "chain": [
+            {
+              "name": "SLA-TrustPoint",
+              "certificate": [
+                {
+                  "serial": "01",
+                  "certtype": "ca"
+                }
+              ]
+            },
+            {
+              "name": "TP-self-signed-350084373",
+              "certificate": [
+                {
+                  "serial": "01",
+                  "certtype": "self-signed"
+                }
+              ]
+            }
+          ]
+        },
+        "trustpoint": [
+          {
+            "id": "SLA-TrustPoint",
+            "enrollment": {
+              "pkcs12": [
+                null
+              ]
+            },
+            "revocation-check": [
+              "crl"
+            ]
+          },
+          {
+            "id": "TP-self-signed-350084373",
+            "enrollment": {
+              "selfsigned": [
+                null
+              ]
+            },
+            "revocation-check": [
+              "none"
+            ],
+            "subject-name": "cn=IOS-Self-Signed-Certificate-350084373"
+          }
+        ]
+      }
+    },
+    "license": {
+      "udi": {
+        "pid": "CSR1000V",
+        "sn": "9610634MSFN"
+      }
+    },
+    "line": {
+      "console": [
+        {
+          "first": "0",
+          "stopbits": "1"
+        }
+      ],
+      "vty": [
+        {
+          "first": 0,
+          "login": {
+            "local": [
+              null
+            ]
+          },
+          "transport": {
+            "input": {
+              "input": [
+                "ssh"
+              ]
+            }
+          }
+        },
+        {
+          "first": 1,
+          "length": 0,
+          "login": {
+            "local": [
+              null
+            ]
+          },
+          "transport": {
+            "input": {
+              "input": [
+                "ssh"
+              ]
+            }
+          }
+        },
+        {
+          "first": 2,
+          "last": 4,
+          "login": {
+            "local": [
+              null
+            ]
+          },
+          "transport": {
+            "input": {
+              "input": [
+                "ssh"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "Cisco-IOS-XE-diagnostics:diagnostic": {
+      "bootup": {
+        "level": "minimal"
+      }
+    }
+  }
+}

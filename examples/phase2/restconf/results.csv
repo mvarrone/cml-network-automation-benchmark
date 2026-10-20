@@ -1,0 +1,5 @@
+run_id,method,workers,repetition,device,host,duration_s,success,http_status,native_json_bytes,raw_body_bytes,lines,error
+20261010_155911_932381,restconf,4,3,R1,192.168.1.31,0.487731,True,200,6089,5622,302,
+20261010_155911_932381,restconf,4,3,R2,192.168.1.32,0.483387,True,200,5526,5179,271,
+20261010_155911_932381,restconf,4,3,R3,192.168.1.33,0.482658,True,200,5529,5182,271,
+20261010_155911_932381,restconf,4,3,R4,192.168.1.34,0.477359,True,200,5529,5182,271,

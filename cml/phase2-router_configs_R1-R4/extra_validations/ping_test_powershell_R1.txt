@@ -1,0 +1,53 @@
+Test-NetConnection 192.168.1.31 -Port 830
+Test-NetConnection 192.168.1.31 -Port 443
+Test-NetConnection 192.168.1.31 -Port 22
+
+Output received:
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\WINDOWS\System32> Test-NetConnection 192.168.1.31 -Port 830
+
+
+ComputerName     : 192.168.1.31
+RemoteAddress    : 192.168.1.31
+RemotePort       : 830
+InterfaceAlias   : vEthernet (External Virtual Switch)
+SourceAddress    : 192.168.1.116
+TcpTestSucceeded : True
+
+
+
+PS C:\WINDOWS\System32> Test-NetConnection 192.168.1.31 -Port 443
+
+
+ComputerName     : 192.168.1.31
+RemoteAddress    : 192.168.1.31
+RemotePort       : 443
+InterfaceAlias   : vEthernet (External Virtual Switch)
+SourceAddress    : 192.168.1.116
+TcpTestSucceeded : True
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\WINDOWS\System32> Test-NetConnection 192.168.1.31 -Port 22
+
+
+ComputerName     : 192.168.1.31
+RemoteAddress    : 192.168.1.31
+RemotePort       : 22
+InterfaceAlias   : vEthernet (External Virtual Switch)
+SourceAddress    : 192.168.1.116
+TcpTestSucceeded : True
+
+
+
+PS C:\WINDOWS\System32>
+
+---------
+
+NETCONF/YANG  TCP/830
+RESTCONF      HTTPS/443
+SSH           22

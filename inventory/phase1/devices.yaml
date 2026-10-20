@@ -1,0 +1,41 @@
+devices:
+  - name: R1
+    host: 192.168.1.11
+    device_type: cisco_ios
+
+  - name: R2
+    host: 192.168.1.12
+    device_type: cisco_ios
+
+  - name: R3
+    host: 192.168.1.13
+    device_type: cisco_ios
+
+  - name: R4
+    host: 192.168.1.14
+    device_type: cisco_ios
+
+  - name: R5
+    host: 192.168.1.15
+    device_type: cisco_ios
+
+  - name: R6
+    host: 192.168.1.16
+    device_type: cisco_ios
+
+  - name: R7
+    host: 192.168.1.17
+    device_type: cisco_ios
+
+  - name: R8
+    host: 192.168.1.18
+    device_type: cisco_ios
+
+  - name: R9
+    host: 192.168.1.19
+    device_type: cisco_ios
+
+  - name: R10
+    host: 192.168.1.20
+    device_type: cisco_ios
+    

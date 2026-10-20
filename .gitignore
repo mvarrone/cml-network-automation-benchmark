@@ -1,0 +1,19 @@
+# Virtual environment
+.venv/
+.venv-wsl/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Backup files
+backups/*
+!backups/.gitkeep
+
+# Result files
+results/*
+!results/.gitkeep
+
+# Credentials
+inventory/phase1/credentials.yaml
+inventory/phase2/credentials.yaml

@@ -1,0 +1,28 @@
+show ip interface brief
+show running-config | include netconf|restconf
+show running-config | include http
+show platform software yang-management process
+
+------
+
+NETCONF/YANG
+- TCP/830 reachable
+- ncclient session established
+- 520 capabilities advertised
+- YANG library present
+
+RESTCONF
+- HTTPS/443 reachable
+- local authentication works
+- Cisco-IOS-XE-native model works
+- JSON response works
+
+Image used:
+CSR1000v
+IOS XE 17.03.08a
+
+3 GB RAM
+1 vCPU
+
+NETCONF/YANG enabled
+RESTCONF enabled

@@ -1,0 +1,5 @@
+run_id,method,workers,repetition,device,host,duration_s,success,native_xml_bytes,raw_xml_bytes,lines,error
+20261010_155709_551000,netconf_yang,4,3,R1,192.168.1.31,0.883938,True,7115,5342,293,
+20261010_155709_551000,netconf_yang,4,3,R2,192.168.1.32,0.884678,True,6712,5112,270,
+20261010_155709_551000,netconf_yang,4,3,R3,192.168.1.33,0.882609,True,6715,5115,270,
+20261010_155709_551000,netconf_yang,4,3,R4,192.168.1.34,0.898806,True,6715,5115,270,

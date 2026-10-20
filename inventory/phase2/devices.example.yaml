@@ -1,0 +1,16 @@
+devices:
+  - name: R1
+    host: 192.168.1.31
+    device_type: cisco_iosxe
+
+  - name: R2
+    host: 192.168.1.32
+    device_type: cisco_iosxe
+
+  - name: R3
+    host: 192.168.1.33
+    device_type: cisco_iosxe
+
+  - name: R4
+    host: 192.168.1.34
+    device_type: cisco_iosxe
